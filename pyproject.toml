@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-note-search"
+version = "0.1.0"
+description = "Offline ranked search for Markdown notes with Unicode tokenization and JSON output."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+markdown-note-search = "note_search.core:main"
+
+[tool.setuptools.packages.find]
+include = ["note_search*"]
